@@ -80,7 +80,7 @@ export function AlgorithmCard({
           {currentFrame && <BarChart frame={currentFrame} maxValue={maxValue} />}
         </div>
         <div className="w-[45%] min-w-0 h-[160px]">
-          <CodePanel snippets={meta.snippets} />
+          <CodePanel snippets={meta.snippets} algorithmName={meta.name} />
         </div>
       </div>
 

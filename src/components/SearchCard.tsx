@@ -81,7 +81,7 @@ export function ArraySearchCard({
 
       <div className="flex gap-3 p-3 border-t border-border min-h-[140px]">
         <div className="flex-1 min-w-0">
-          <CodePanel snippets={meta.snippets} />
+          <CodePanel snippets={meta.snippets} algorithmName={meta.name} />
         </div>
         <div className="w-36 shrink-0">
           <ComplexityTable complexity={meta.complexity} />
@@ -174,7 +174,7 @@ export function GraphSearchCard({
 
       <div className="flex gap-3 p-3 border-t border-border min-h-[140px]">
         <div className="flex-1 min-w-0">
-          <CodePanel snippets={meta.snippets} />
+          <CodePanel snippets={meta.snippets} algorithmName={meta.name} />
         </div>
         <div className="w-36 shrink-0">
           <ComplexityTable complexity={meta.complexity} />

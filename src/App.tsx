@@ -1,8 +1,12 @@
+import { Sun, Moon } from 'lucide-react'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { SortingPage } from '@/pages/SortingPage'
 import { SearchingPage } from '@/pages/SearchingPage'
+import { useTheme } from '@/hooks/useTheme'
 
 export default function App() {
+  const { theme, toggle } = useTheme()
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Tabs defaultValue="sorting" className="flex flex-col min-h-screen">
@@ -18,6 +22,13 @@ export default function App() {
             <TabsTrigger value="sorting">Sorting</TabsTrigger>
             <TabsTrigger value="searching">Searching</TabsTrigger>
           </TabsList>
+          <button
+            onClick={toggle}
+            title={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+            className="flex items-center justify-center w-8 h-8 rounded-md border border-border text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+          >
+            {theme === 'dark' ? <Sun size={15} /> : <Moon size={15} />}
+          </button>
         </header>
 
         <TabsContent value="sorting" className="flex-1 mt-0">
