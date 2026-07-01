@@ -1,0 +1,8 @@
+export { generateFrames as linearSearchFrames } from './linearSearch'
+export { generateFrames as binarySearchFrames } from './binarySearch'
+export { generateFrames as jumpSearchFrames } from './jumpSearch'
+export { generateFrames as interpolationSearchFrames } from './interpolationSearch'
+export { generateFrames as exponentialSearchFrames } from './exponentialSearch'
+export { generateFrames as bfsFrames } from './bfs'
+export { generateFrames as dfsFrames } from './dfs'
+export { generateFrames as aStarFrames } from './aStar'

@@ -1,0 +1,8 @@
+export { generateFrames as bubbleSortFrames } from './bubbleSort'
+export { generateFrames as selectionSortFrames } from './selectionSort'
+export { generateFrames as insertionSortFrames } from './insertionSort'
+export { generateFrames as mergeSortFrames } from './mergeSort'
+export { generateFrames as quickSortFrames } from './quickSort'
+export { generateFrames as heapSortFrames } from './heapSort'
+export { generateFrames as shellSortFrames } from './shellSort'
+export { generateFrames as radixSortFrames } from './radixSort'

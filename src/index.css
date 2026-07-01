@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: hsl(222 47% 11%);
+  --color-foreground: hsl(210 40% 98%);
+
+  --color-card: hsl(222 47% 14%);
+  --color-card-foreground: hsl(210 40% 98%);
+
+  --color-muted: hsl(217 33% 20%);
+  --color-muted-foreground: hsl(215 20% 65%);
+
+  --color-border: hsl(217 33% 22%);
+
+  --color-primary: hsl(243 75% 59%);
+  --color-primary-foreground: hsl(0 0% 100%);
+
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+
+  --color-warning: hsl(38 92% 50%);
+  --color-warning-foreground: hsl(0 0% 10%);
+
+  --color-success: hsl(142 72% 37%);
+  --color-success-foreground: hsl(0 0% 100%);
+
+  /* Bar / cell state colors */
+  --color-bar-default: hsl(243 75% 59%);
+  --color-bar-comparing: hsl(38 92% 50%);
+  --color-bar-swapping: hsl(0 84% 60%);
+  --color-bar-sorted: hsl(142 72% 37%);
+  --color-bar-pivot: hsl(280 80% 65%);
+  --color-bar-visited: hsl(199 89% 70%);
+  --color-bar-frontier: hsl(38 92% 50%);
+  --color-bar-path: hsl(142 72% 37%);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
